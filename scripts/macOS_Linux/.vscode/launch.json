@@ -14,9 +14,6 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "args": [
-                "wdecorte@soliantconsulting.com",
-                "3cyZ%z9J7mmQ",
-                "17C"
             ]
 
         }
