@@ -36,8 +36,7 @@ u = sys.argv[1]
 p = sys.argv[2]
 fms_version = sys.argv[3]
 # server = "192.168.2.115" # should always be localhost in production, for testing, can change to something else
-# server = "localhost"
-server = 'soliantdev.fmi.filemaker-cloud.com'
+server = "localhost"
 
 if fms_version == '17':
     url = "https://" + server + "/fmi/admin/api/v1/user/login"
