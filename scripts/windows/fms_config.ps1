@@ -6,7 +6,7 @@
 #    
 #
 #    Wim Decorte <wdecorte@soliantconsulting.com>
-#    version 1.0.0 - 20190517_1239 
+#    version 1.1.0 - 2020-11-26 - 8:32 AM 
 #
 #    Released under the GNU General Public License WITHOUT ANY WARRANTY.
 #
