@@ -48,9 +48,9 @@ if($fms_version -eq "17")
     $response = Invoke-RestMethod -Uri $URI -Method POST -body $body -ContentType "application/json"
     $token = $response.token
 }
-elseif ($fms_version -eq "18")
+else
 {
-
+    # this applies to 18 and up
     # username:password pair
     $credPair = $u + ":" + $p
     # Write-Host $credPair
@@ -77,8 +77,9 @@ if($fms_version -eq "17")
     $URI3 = "https://localhost/fmi/admin/api/v1/user/logout"
     $logout = Invoke-RestMethod -Uri $URI3 -Method POST -Headers $headers2 -ContentType "application/json"
 }
-elseif ($fms_version -eq "18")
+else
 {
+    # 18 and up
     $URI3 = "https://localhost/fmi/admin/api/v2/user/auth/" + $token
     $logout = Invoke-RestMethod -Uri $URI3 -Method DELETE -Headers $headers2
 }
